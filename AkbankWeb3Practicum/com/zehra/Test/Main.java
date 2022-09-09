@@ -74,7 +74,11 @@ public class Main {
                         } else if (kullaniciSecim == 4) {
                             gise.odeme(kayit, yonetim);
                         }else if(kullaniciSecim == 5){
-                            
+                            if(kayit.getGecisSaati()==null && kayit.getGecisTarihi()==null){
+                                System.out.println("Giseden gecis yapmadiniz...");
+                            }else{
+                                System.out.println("Giseden gecis yaptiginiz tarih = "+kayit.getGecisTarihi()+"\nGiseden gecis yaptiginz saat = "+kayit.getGecisSaati());
+                            }
                         }
                         else if (kullaniciSecim == 6) {
                             break;
