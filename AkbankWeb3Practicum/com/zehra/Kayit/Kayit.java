@@ -24,15 +24,18 @@ public class Kayit {
         this.soyad = soyad;
         this.aracSinifi = aracSinifi;
         this.bakiye = bakiye;
+        
+
+    }
+    public void gecisTarihi(){
         DateFormat tarih = new SimpleDateFormat("yyyy/MM/dd");
         Date gecisTarihi = new Date();
         this.gecisTarihi = tarih.format(gecisTarihi);
         DateFormat saat = new SimpleDateFormat("HH:mm:ss");
         Date gecisSaati = new Date();
         this.gecisSaati = saat.format(gecisSaati);
-
+        
     }
-
     public int getHgsNo() {
         return hgsNo;
     }
