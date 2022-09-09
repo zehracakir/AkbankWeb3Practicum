@@ -18,6 +18,7 @@ public class Gise {
                 System.out.println("Güncel bakiyeniz: " + aracSinifi.getBakiye());
                 liste.add(aracSinifi.getAracSinifi());
                 yonetim.bakiyeArtir(40);
+                aracSinifi.gecisTarihi();
             }
 
         } else if (aracSinifi.getAracSinifi().getSegmentSinifi() == 2) {
@@ -28,6 +29,7 @@ public class Gise {
                 System.out.println("Güncel bakiyeniz: " + aracSinifi.getBakiye());
                 liste.add(aracSinifi.getAracSinifi());
                 yonetim.bakiyeArtir(50);
+                aracSinifi.gecisTarihi();
             }
 
         } else if (aracSinifi.getAracSinifi().getSegmentSinifi() == 3) {
@@ -38,6 +40,7 @@ public class Gise {
                 System.out.println("Güncel bakiyeniz: " + aracSinifi.getBakiye());
                 liste.add(aracSinifi.getAracSinifi());
                 yonetim.bakiyeArtir(60);
+                aracSinifi.gecisTarihi();
             }
         } else {
             System.out.println("İşlem yapılamadı.");
