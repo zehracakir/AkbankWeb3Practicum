@@ -61,7 +61,8 @@ public class Main {
                                 "2-Araç türü sorgulama\n" +
                                 "3-Bakiye sorgulama\n" +
                                 "4-Gişeden geçiş yapma\n" +
-                                "5-Çıkış";
+                                "5-Gişeden geçiş tarihi ogren\n" +
+                                "6-Çıkış";
                         System.out.println(kullaniciMenu);
                         int kullaniciSecim = klavye.nextInt();
                         if (kullaniciSecim == 1) {
@@ -72,7 +73,10 @@ public class Main {
                             System.out.println(kayit.getBakiye());
                         } else if (kullaniciSecim == 4) {
                             gise.odeme(kayit, yonetim);
-                        } else if (kullaniciSecim == 5) {
+                        }else if(kullaniciSecim == 5){
+                            
+                        }
+                        else if (kullaniciSecim == 6) {
                             break;
                         } else {
                             System.out.println("Hatalı seçim");
